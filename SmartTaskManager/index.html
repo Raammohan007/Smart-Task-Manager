@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Smart Task Manager</h1>
+      <p>Organize your tasks efficiently with a clean and elegant smart task management system.</p>
+      <button id="themeToggle" class="theme-btn">🌙 Dark</button>
+    </div>
+
+    <div class="content">
+      <div class="features">
+        <h2>Features</h2>
+        <ul>
+          <li>Task Creation: Easily create tasks with priorities.</li>
+          <li>Task Tracking: Monitor the progress of your tasks in real-time.</li>
+        </ul>
+      </div>
+
+      <div class="task-input-section">
+        <h2>Add New Task</h2>
+        <div class="task-form">
+          <input type="text" id="taskInput" placeholder="Enter your task here..." />
+          <select name="priority" id="priority">
+            <option value="low">Low Priority</option>
+            <option value="medium">Medium Priority</option>
+            <option value="high">High Priority</option>
+          </select>
+          <button id="addTaskBtn">Add Task</button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <h2>Search & Filter</h2>
+        <div class="toolbar-top">
+          <input type="text" id="searchInput" placeholder="Search tasks..." />
+          <div class="filters">
+            <button id="filterAll">All Tasks</button>
+            <button id="filterCompleted">Completed Tasks</button>
+            <button id="filterPending">Pending Tasks</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <h3>Total Tasks</h3>
+          <p id="totalTasks">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Completed Tasks</h3>
+          <p id="completedTasks">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Pending Tasks</h3>
+          <p id="pendingTasks">0</p>
+        </div>
+      </div>
+
+     <div class="task-list-section">
+  <h2>Your Tasks</h2>
+  <div class="task-list" id="taskList">
+    <div class="empty-state" id="emptyState">No tasks added yet. Start by creating your first task.</div>
+  </div>
+</div>
+    </div>
+  </div>
+</body>
+</html>
+<script src="script.js"></script>
